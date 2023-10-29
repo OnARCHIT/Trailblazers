@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.menu-bar
+{
+    background: orangered;
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    display: flex;
+}
+.menu-bar ul
+{
+    
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bar ul li
+{
+width: 100px;
+margin: 10px;
+padding: 5px;
+}
+.menu-bar ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-bar ul li a:hover
+{
+    color: black;
+}
+ul li .sub-menu-2
+{
+    display: none;
+}
+.menu-bar ul li a:hover .sub-menu-2
+{ display: block;
+    position: absolute;
+    background: orangered;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    height: 50px;
+    
+}
+
+.nav-list{
+    width:100%; 
+    display: flex; 
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{ 
+    color: rgb(197, 194, 194);
+}
+
+.rightNav{ 
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background:orangered;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+    display: inline;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #00f2ff;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+        
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%; 
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+.text-small{
+    font-size: 10px;
+}
+
+.btn{
+    padding: 4px 8px;
+    margin: 4px 1px;
+    border-radius: 2px; 
+    background: none;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5px;
+    text-align: center;
+    display:flex;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+    background: transparent;
+    text-align: right;
+    display: flex;
+    
+}
+
+.btn-dark{
+    color: black;
+        border: 2px solid grey;
+
+}
+.section{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    background: gainsboro;
+}
+
+.section-left{
+    padding: 45px 25px;
+    background: rgb(0, 151, 151);
+    color: white;
+     flex-direction: row-reverse;
+}
+
+.main{
+    
+}
+.text-big
+{
+    color: rgb(2, 2, 81);
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+.text-small
+{
+   
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row-reverse;
+
+}
+.text-small li
+{
+    
+    padding: 5px 0px;
+}
+.text-small li a
+{
+    text-decoration: none;
+    color: orangered;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 200px 0px;
+}
+
+
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 833px;
+}
+.text-center{
+
+    text-align: center;
+    padding-top: 30px;
+   font-family: 'Ubuntu', sans-serif;
+       font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%; 
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+   font-family: 'Ubuntu', sans-serif; 
+   display: flex;
+   justify-content: center;
+   color: white;
+   
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.middle
+{
+    
+}
+.t-B
+{ 
+    color: #f6f5f4;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.t-S{
+    color: #fff;
+    font-size: 5px;
+    font-family: monospace;
+    
+}
