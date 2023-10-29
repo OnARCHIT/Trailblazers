@@ -19,13 +19,19 @@ html{
     border-radius: 50px;
     margin: 5px;
 }
+.header
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
 .menu-bar
 {
     background: orangered;
     text-align: center;
     width: 800px;
     height: 50px;
-    display: flex;
+    display: inline-flex;
 }
 .menu-bar ul
 {
@@ -33,6 +39,7 @@ html{
     list-style: none;
     color: #fff;
     text-decoration: none;
+    
 }
 
 .menu-bar ul li
@@ -40,11 +47,13 @@ html{
 width: 100px;
 margin: 10px;
 padding: 5px;
+
 }
 .menu-bar ul li a
 {
     color: #fff;
     text-decoration: none;
+    
 }
 .menu-bar ul li a:hover
 {
@@ -101,10 +110,15 @@ ul li .sub-menu-2
     text-align: right;
     padding: 0 23px;
 }
+.v-class-resp
+{
+    display:flex;
+    text-align: right;
+}
 
 #search{
-    padding: 5px;
-    font-size: 17px;
+    padding: 2px 8px;
+    font-size: 10px;
     border: 2px solid grey;
     border-radius: 9px;
 }
@@ -232,9 +246,9 @@ ul li .sub-menu-2
     align-items: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
-    height: 80%;
+    height: 100%;
 }
 
 .firstHalf{
@@ -280,9 +294,9 @@ ul li .sub-menu-2
 }
 
 .btn-sm{
-    padding: 6px 10px;
+    padding: 2px 8px;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 10px;
     background: transparent;
     text-align: right;
     display: flex;
