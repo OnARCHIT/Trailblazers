@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" contents="" width-device-width,initial-scale="1.0">
+        <link rel="stylesheet" href="design.css">
+        <title>AICTE FORM</title>
+        <script type="text/javascript">
+            function callvalue()
+            {
+                var name= document.getElementById("name").value;
+                var name= document.getElementById("Fname").value;
+                var name= document.getElementById("Mname").value;
+                document.writeln("AICTE FORM:"+"<br>"+"Your Name:"+name+"<br>")
+                document.writeln("Father's Name:"+Fname)
+                document.writeln("Mother's Name:"+Mname)
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h2>USER REGISTRAION & AUTHENTICATION</h2>
+        <form onsubmit="callvalue()">
+            <fieldset>
+            <div><br>
+                <label for="name">Name:</label>
+               <input type="text" placeholder="myName" id="name">
+               
+            </div>
+            
+            <div>
+                <br>
+                <label for="Fname"></label>Father's Name:</label>
+                <input type="text" placeholder="myFName" id="Fname">
+            </div>
+            
+            <div>
+                <br>
+                <label for="Mname"></label>Mother's Name:</label>
+                <input type="text" placeholder="myMname" id="Mname">
+            </div>
+            <div>
+                <br>
+                D.O.B:<input type="date" name="myDOB">
+            </div>
+            <div>
+                <br>
+                Contact:<input type="number" name="myContact">
+            </div>
+            <div>
+                <br>
+                Email:<input type="email" name="myEmail">
+            </div>
+            <div>
+                photo:<input type="file"= name="myphoto">
+            </div>
+            <div>
+                <br>
+                Gender:MALE <input type="radio" name="myGENDER">
+                FEMALE <input type="radio" name="myGENDER">
+                OTHER <input type="radio" name="myGENDER">
+            </div>
+            
+            <div>
+                <br>
+                <label for="nation">Nationality:</label>
+                <select name="myNation" id="nation">
+                    <option value="India">INDIA</option>
+                    <option value="AFGANISTAN">AFGANISTAN</option>
+                    <option value="BANGLADESH">BANGLADESH</option>
+                    <option value="Sri-lanka">Sri-lanka</option>
+                    <option value="Canada">CANADA</option>
+                    <option value="CHINA">CHINA</option>
+                </select>
+            </div>
+            <div>
+                <br>
+                <label for="State">STATE:</label>
+                <select name="myState" id="State">
+                    <option value="JHARKHAND">JHARKHAND</option>
+                    <option value="BIHAR">BIHAR</option>
+                    <option value="BANGLADESH">PUNJAB</option>
+                    <option value="MADHYA PARDESH">MADHYA PARDESH</option>
+                    <option value="UTTAR PARDESH">UTTAR PARDESH</option>
+                    <option value="CHINA"></option>
+                </select>
+            </div>
+            <br>
+                DO YOU HAVE PWD QOUTA? :<input type="CHECKBOX" name="myQuota">
+            </div>
+            <div>
+                <br>
+                DO YOU HAVE DEFENSE QOUTA? :<input type="CHECKBOX" name="myQuota">
+            </div>
+        
+           <div>
+            <br>
+                <input type="SUBMIT" VALUE="Signup">
+            </div>
+            <div>
+                <input type="reset" VALUE="RESET NOW">
+            </div>
+            <div>
+                <br>
+            FEEDBACK:<textarea name="myText"></textarea>
+            </div>
+        </fieldset>
+        </form>
+    </body>
+</html>
