@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>TRAILBLAZER-"पढ़ेगा भारत , बढ़ेगा भारत"</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="logo1.jpg" alt="logo"></div>
+            <div class="menu-bar">
+            <li><a href="#home"><i class="fa-thin fa-house"></i>HOME</a></li>
+            <li><a href="#acdemics"><i class="fa-thin fa-"></i>ACADEMIC</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="file:///C:/project/html/form.html">REGISTRAION</a></li>
+                        <li><a href="file:///C:/project/html/Dashboard.htmL">DASHBOARD</a></li>
+                        <li><a href="file:///C:/project/html/Curriculum.html">CURRICULUM</a></li>
+                        <li><a href="file:///C:/project/html/Resource.html">RESOURCE</a></li>
+                        <li><a href="file:///C:/project/html/Report.html">REPORT</a></li>
+                        <li><a href="file:///C:/project/html/Notification.html">UPDATES</a></li>
+                        <li><a href="file:///C:/project/html/Feedback.html">FEEDBACK</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#about"><i class="fa-thin fa-clone"></i>ABOUT</a></li>
+            <li><a href="#service"><i class="fa-thin fa-"></i>SERVICES</a></li>
+            <li><a href="#home"><i class="fa-thin fa-house"></i>REPORT</a></li>
+            <li><a href="#home"><i class="fa-thin fa-phone"></i>CONTACT US</a></li>
+        </ul>
+        </div>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <div class="slider">
+                    <div class="slides">
+                      <!--radio buttons start-->
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+                      <!--radio buttons end-->
+                      <!--slide images start-->
+                      <div class="slide first">
+                        <img src="1s.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="2s.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="3s.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="4s.jpg" alt="">
+                      </div>
+                      <!--slide images end-->
+                      <!--automatic navigation start-->
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+                      <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                  </div>
+                  <!--image slider end-->
+              
+                  <script type="text/javascript">
+                  var counter = 1;
+                  setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                      counter = 1;
+                    }
+                  }, 5000);
+                  </script>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="main">
+        <p class="text-big">QUICK LINKS</p>
+            <ul class="text-small">
+                <li><a href="#about">Administrator</a></li>
+                <li><a href="#service">Curriculum Developer</a></li>
+                <li><a href="#home">Educator</a></li>
+                <li><a href="#home">Help Desk</a></li>
+            </ul>
+                
+
+        </div>
+        <div class="thumbnail">
+            <img src="mlogo.png" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="middle">
+        <p class="t-B">Welcome to TRAILBLAZER</p>
+        <p class="t-S">This website is designed by students of "CENTRAL UNIVERSITY JHARKHAND" B-Tech Students in 2023 to spread education in each corner of nation and facilities available education</p>
+        </div>
+        <div class="thumbnail">
+            <img src="mlogo.png" alt="laptop image" class="imgFluid">
+        </div>
+        <div class="buttons">
+                    <button class="btn">ABOUT US+</button>
+
+                </div> 
+    </section>
+    <section class="section" id="services">
+        <div class="middle">
+        <p class="sectionTag text-big">Lets Grow Together</p>
+        <p class="sectionSubTag text-small">Education began in prehistory, as adults trained the young in the knowledge and skills deemed necessary in their
+        society. In pre-literate societies, this was achieved orally and through imitation. Story-telling passed knowledge,
+        values, and skills from one generation to the next. As cultures began to extend their knowledge beyond skills that could
+        be readily learned through imitation, formal education developed. Schools existed in Egypt at the time of the Middle
+        Kingdom.</p>
+        
+        <p class="sectionSubTag text-small"> 
+        Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607
+        Plato founded the Academy in Athens, the first institution of higher learning in Europe. 
+         </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?javascript,apple, nature, happy" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+     
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+             <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2027 - www.Trailblazer.com - All rights reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+
+</body>
+
+</html>
